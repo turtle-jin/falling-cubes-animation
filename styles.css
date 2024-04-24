@@ -1,0 +1,23 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: arial;
+}
+
+body {
+    background-color: #07252d;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+h1 {
+    position: relative;
+    letter-spacing: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    line-height: 0.7em;
+    font-size: 60px;
+}
