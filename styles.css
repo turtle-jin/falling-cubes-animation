@@ -6,18 +6,100 @@
 }
 
 body {
-    background-color: #07252d;
+    background-color: black;
     min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    justify-content: center;
+    align-items: center;
+    color: #6a4c93;
+    gap: 1rem;
+}
+
+.container {
     display: flex;
     justify-content: center;
     align-items: center;
+    /* border: solid red; */
+    background-color: #021014;
+    width: 1400px;
+    height: 1000px;
+    flex-direction: column;
+    gap: 15rem;
+    
+    
+}
+h1 {
+    font-size: 8em;
+    letter-spacing: 50px;
+    animation: animate 5s linear infinite;
 }
 
-h1 {
+h2 {
+    color: #fff;
+    text-shadow: 0 0 10px #03bcf4,
+    0 0 20px #03bcf4,
+    0 0 40px #03bcf4,
+    0 0 80px #03bcf4; 
+}
+
+h3 {
+    font-size: 15px;
+    letter-spacing: 10px;
+}
+h1, h3{
+    /* border: solid; */
     position: relative;
-    letter-spacing: 15px;
+    
     text-transform: uppercase;
     text-align: center;
     line-height: 0.7em;
-    font-size: 60px;
+    color: #0e3742;
+    -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
+    
+}
+@keyframes animate{
+    0%,40%, 60%, 80%, 90%{
+        color: #0e3742;
+    }
+    20%, 41%, 60%, 80%, 90%, 100%{
+        color: #fff;
+        text-shadow: 0 0 10px #03bcf4,
+        0 0 20px #03bcf4,
+        0 0 40px #03bcf4,
+        0 0 80px #03bcf4;
+    }
+}
+
+.gridContainer {   
+    /* border: solid yellow; */
+    width: 1400px;
+    height: 1000px;
+    position: absolute; 
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.gridContainer .box{
+    width: 50px;
+    height: 50px;
+    background-color: #340202;
+    border: 1px solid #000;
+}
+
+.gridContainer .box.active {
+    background-color: rgb(8, 150, 245);
+    box-shadow: 0 0 10px rgb(37, 127, 179), 
+    0 0 30px rgb(37, 127, 179),
+    0 0 60px rgb(37, 127, 179);
+    animation: animate2 2s linear forwards; 
+}
+@keyframes animate2 {
+    from{
+        transform: translateY(0) rotate(0deg);
+    }
+    to {
+        transform: translateY(100vh) rotate(360deg);
+    }
 }
