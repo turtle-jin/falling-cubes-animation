@@ -14,7 +14,8 @@ body {
     justify-content: center;
     align-items: center;
     color: #6a4c93;
-    gap: 1rem;
+    /* gap: 1rem; */
+    margin: 1rem;
 }
 
 .container {
@@ -24,7 +25,7 @@ body {
     /* border: solid red; */
     background-color: #021014;
     width: 1400px;
-    height: 1000px;
+    height: 800px;
     flex-direction: column;
     gap: 15rem;
     
@@ -75,7 +76,7 @@ h1, h3{
 .gridContainer {   
     /* border: solid yellow; */
     width: 1400px;
-    height: 1000px;
+    height: 800px;
     position: absolute; 
     display: flex;
     flex-wrap: wrap;
@@ -102,4 +103,21 @@ h1, h3{
     to {
         transform: translateY(100vh) rotate(360deg);
     }
+}
+
+#playIcon {
+    width: 3rem;
+    
+}
+
+img:hover {
+    cursor: pointer;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    align-items: center;
+
 }
