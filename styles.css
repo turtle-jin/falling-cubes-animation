@@ -46,7 +46,7 @@ h2 {
 }
 
 h3 {
-    font-size: 15px;
+    font-size: 18px;
     letter-spacing: 10px;
 }
 h1, h3{
@@ -120,4 +120,52 @@ img:hover {
     gap: 1rem;
     align-items: center;
 
+}
+
+@media (max-width:1000px) {
+    body {
+        margin-left: 30px;
+    }
+    
+    .top {
+        flex-direction: column;
+        margin-bottom: 1rem;
+    }
+
+    h2{
+        font-size: 1rem;
+    }
+
+    h3 {
+        font-size: 15px;
+        letter-spacing: normal;
+        -webkit-box-reflect: none;
+        line-height: 1em;
+    }
+
+    h1 {
+        font-size: 2rem;
+        letter-spacing: 10px;
+    }
+
+    .container {
+        width: 350px;
+        height: 350px;
+        gap: 5rem;
+        padding: 1rem;
+        /* border: solid; */
+        
+    }
+
+    .gridContainer {   
+        width: 350px;
+        height: 350px;
+    }
+
+    .gridContainer .box{
+        width: 25px;
+        height: 25px;
+        background-color: #340202;
+        border: 1px solid #000;
+    }
 }
