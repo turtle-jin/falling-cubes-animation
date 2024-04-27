@@ -13,7 +13,7 @@ body {
     overflow: hidden;
     justify-content: center;
     align-items: center;
-    color: #6a4c93;
+    color: #67690b;
     /* gap: 1rem; */
     margin: 1rem;
 }
@@ -27,7 +27,7 @@ body {
     width: 1400px;
     height: 800px;
     flex-direction: column;
-    gap: 15rem;
+    gap: 10rem;
     
     
 }
@@ -38,7 +38,7 @@ h1 {
 }
 
 h2 {
-    margin-bottom: 2rem;
+    margin: 2rem;
     color: #fff;
     text-shadow: 0 0 10px #03bcf4,
     0 0 20px #03bcf4,
@@ -49,6 +49,7 @@ h2 {
 h3 {
     font-size: 18px;
     letter-spacing: 10px;
+    margin: 3rem;
 }
 h1, h3{
     /* border: solid; */
@@ -135,6 +136,7 @@ img:hover {
         letter-spacing: normal;
         -webkit-box-reflect: none;
         line-height: 1em;
+        margin: 0;
     }
 
     h1 {
