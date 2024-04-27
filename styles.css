@@ -62,6 +62,10 @@ h1, h3{
     -webkit-box-reflect: below 1px linear-gradient(transparent, #0008);
     
 }
+
+a {
+    margin-bottom: 1rem;
+}
 @keyframes animate{
     0%,40%, 60%, 80%, 90%{
         color: #0e3742;
