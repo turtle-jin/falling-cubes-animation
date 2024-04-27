@@ -38,6 +38,7 @@ h1 {
 }
 
 h2 {
+    margin-bottom: 2rem;
     color: #fff;
     text-shadow: 0 0 10px #03bcf4,
     0 0 20px #03bcf4,
@@ -114,13 +115,6 @@ img:hover {
     cursor: pointer;
 }
 
-.top {
-    display: flex;
-    justify-content: center;
-    gap: 1rem;
-    align-items: center;
-
-}
 
 @media (max-width:1000px) {
     body {
@@ -132,7 +126,7 @@ img:hover {
         margin-bottom: 1rem;
     }
 
-    h2{
+    h2 {
         font-size: 1rem;
     }
 
